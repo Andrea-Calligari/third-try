@@ -1,38 +1,158 @@
-.App {
+/*CONTAINER/*//*CONTAINER/*//*CONTAINER/*//*CONTAINER/*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.container-dm{
+  max-width: 1000px;
+  margin: 0 auto;
   text-align: center;
+  border-radius: 24px;
+  padding: 26px;
+}
+.container-hide{
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 24px;
+  padding: 26px;
+  color: black;
+  border-radius: 24px;
+  border: 1px solid black;
+}
+.counter-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 12px;
+  text-align: center;
+  padding: 24px;
+  background-image: url('https://th.bing.com/th/id/OIP.Nf1MDw4ZRMBSeVCtS3_r_gHaFj?rs=1&pid=ImgDetMain');
+  background-position: center;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*CARD/*//*CARD/*//*CARD/*//*CARD/*/
+.card{
+  border: 1px solid black;
+  padding: 30px;
+  background-color: whitesmoke;
+  border-radius: 24px;
+  color:black;
+}
+.card:hover{
+  transition: ease 0.3ms;
+  transform: scale(0.9);
+}
+.card.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.card.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*ROW-FLEX/*//*ROW-FLEX/*//*ROW-FLEX/*//*ROW-FLEX/*/  
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.row-list-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.row-form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/*FORM/*FORM/*FORM/*FORM/*FORM/*/
+form{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 24px;
+  
+}
+input{
+  width: 500px;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  
+}
+label{
+  font-size: 20px;
+}
+.btn-form{
+  background-color: rgb(21, 60, 73) ;
+  color: black;
+  border-radius: 999px ;
+}
+/*BUTTON/*//*BUTTON/*//*BUTTON/*//*BUTTON/*/
+.button {
+  border: 1px solid black;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 999px;
   color: white;
+  cursor: pointer;
+}
+.btn-card {
+  background-color: purple;
+  font-weight: bold;
+  border: purple;
+  margin-bottom: 10px;
+}
+.btn-decrement {
+  background-color: red;
+  font-weight: bold;
+  border: red;
+}
+.btn-hide {
+  background-color: violet;
+  font-weight: bold;
+  border: purple;
+  margin-top: 10px;
+}
+.btn-increment {
+  background-color: green;
+  font-weight: bold;
+  border: green;
+}
+.btn-reset {
+  background-color: grey;
+  font-weight: bold;
+  border: yellow;
 }
 
-.App-link {
-  color: #61dafb;
+/*COLUMN/*//*COLUMN/*//*COLUMN/*//*COLUMN/*/
+.col-4 {
+  width: calc(4 * 100 / 12);
+}
+.col-3{
+  width: calc(3 * 100 / 12);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*THEME-MODE/*//*THEME-MODE/*//*THEME-MODE/*/
+.light-mode {
+  transition: ease-in-out 0.7s;
+
+  background-color: white;
+  color: black;
+}
+.dark-mode {
+  transition: ease-in-out 0.7s;
+  background-color: black;
+  color: white;
 }
