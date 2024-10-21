@@ -7,6 +7,9 @@ import ShortCircuitEvaluation from './components/ShortCircuitEvaluation';
 import HideordShowComponent from './components/HideordShowComponent';
 import DM from './components/DM';
 import ControlledInput from './components/ControlledInput';
+import Scroll from './components/Scroll';
+import Index from './components/Index';
+
 
 
 function App() {
@@ -22,6 +25,9 @@ function App() {
       <HideordShowComponent />
       <DM/>
       <ControlledInput/>
+      {/* <Scroll/> */}
+      <Index/>
+      
     </div>
   );
 }

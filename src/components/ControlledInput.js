@@ -54,10 +54,10 @@ const ControlledInput = () => {
    const handleChange = (e) => {
      //  console.log(e.target.value);
     const {name, value} = e.target;
-     setPerson(prevPerson =>({
-      ...prevPerson,
+     setPerson({
+      ...person,
       [name]: value,
-     }));
+     });
      
 
    }
