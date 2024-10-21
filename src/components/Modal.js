@@ -1,11 +1,12 @@
 import React from 'react';
 
-const Modal = ({ modalContent, modalState, toggleModal }) => {
+
+const Modal = ({ modalContent, modalState, closeModal }) => {
    
 
     return (
         <>
-             {modalState && <div className="overlay" onClick={toggleModal}></div>}
+             {modalState && <div className="overlay" ></div>}
             <section className={`modal-section  ${modalState ? 'show-modal' : ''}`}>
                 <div className="modal-content">
                     <h1>Modal</h1>
@@ -13,9 +14,8 @@ const Modal = ({ modalContent, modalState, toggleModal }) => {
                         {modalContent || 'sono un bel Modal'}
                     </div>
                 </div>
-                <button onClick={toggleModal} className='button btn-delete'>Close Modal</button>
+                <button onClick={closeModal} className='button btn-delete'>Close Modal</button>
             </section>
-            <button onClick={toggleModal} className='button btn-open'>Open Modal</button>
         </>
     );
 };
